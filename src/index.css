@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -45,7 +45,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -135,7 +135,7 @@ p {
 }
 
 /*
-=============== 
+===============
 Color Generator
 ===============
 */
@@ -164,8 +164,8 @@ input {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-color: transparent;
-  border-top-right-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
+  border-radius: 5px;
+  margin-left: 10px;
   text-transform: capitalize;
   color: var(--clr-white);
   cursor: pointer;
@@ -180,7 +180,7 @@ input {
   }
 }
 input.error {
-  border: 2px solid var(--clr-red-dark);
+  border: 3px solid var(--clr-red-dark);
 }
 .colors {
   min-height: calc(100vh - 100px);
