@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import rgbToHex from './utils'
 
-const SingleColor = ({ rgb, weight, index, hexColor }) => {
+export type Color = {
+  rgb: number[]
+  weight: number
+  hex: string
+}
+
+type Props = {
+  color: Color
+  index: number
+}
+
+const SingleColor = ({ color, index }: Props) => {
   const [alert, setAlert] = useState(false)
+  const { rgb, hex: hexColor, weight } = color
   const backgroundColor = rgb.join(',')
   const hexValue = `#${hexColor}`
 
